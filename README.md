@@ -1,7 +1,11 @@
 Steps to run
 
-1- npm i
-2- npm run start
+npm i
+
+npm run start
+
+
+
 
 Test:
 
