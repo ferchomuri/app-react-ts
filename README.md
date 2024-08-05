@@ -1,16 +1,21 @@
-Steps to run
+## Steps to Run
 
-npm i
+1. Install dependencies:
+   ```bash
+   npm i
+   ```
 
-npm run start
+2. Run server
+   ```bash
+   npm run start
+   ```
 
+## Test
 
-
-
-Test:
-
-npm run test
-
+   ```bash
+    npm run test
+   ```
 or
-
-npm run test:coverage
+   ```bash
+    npm run test:coverage
+   ```
