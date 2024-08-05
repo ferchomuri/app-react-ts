@@ -1,0 +1,10 @@
+export type { ModalProps } from "./components/ModalTypes";
+export type { ITableProps } from "./components/TableTypes";
+export type { TextProps } from "./components/TextTypes";
+export type { InputProps } from "./components/InputTypes";
+export type { ImageProps } from "./components/ImageTypes";
+export type { ButtonProps } from "./components/ButtonTypes";
+export type { ContainerProps } from "./components/ContainerTypes";
+export type { ILoadingProps } from "./components/LoadingTypes";
+export type { IProductProps } from "./ProductTypes";
+export type { SelectProps } from "./components/SelectTypes";

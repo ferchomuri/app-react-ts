@@ -1,0 +1,35 @@
+.normal-text {
+  font-size: 13px;
+  line-height: 1.5;
+  font-weight: 400;
+  color: #333;
+}
+
+.bold-text {
+  font-weight: 700;
+  color: #333;
+}
+
+.italic-text {
+  font-style: italic;
+}
+
+.underline-text {
+  text-decoration: underline;
+}
+
+.left {
+  text-align: left;
+}
+
+.center {
+  text-align: center;
+}
+
+.right {
+  text-align: right;
+}
+
+.wrap-text {
+  white-space: normal !important;
+}

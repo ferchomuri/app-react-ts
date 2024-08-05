@@ -1,0 +1,173 @@
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: black;
+}
+
+th {
+  text-align: left;
+}
+
+thead th {
+  display: none;
+
+  @media (min-width: 768px) {
+    display: table-cell;
+    background-color: #f9fafc;
+    border-bottom: 2px solid #eef0f6;
+  }
+}
+
+tbody {
+  max-height: 400px;
+}
+
+tbody tr {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  border-bottom: 10px solid #eef0f6;
+  background-color: #ffffff;
+
+  @media (min-width: 768px) {
+    display: table-row;
+    flex-direction: row;
+    border-bottom: 2px solid #eef0f6;
+  }
+}
+
+tbody tr:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+tbody td {
+  position: relative;
+}
+
+tbody tr td img {
+  width: 100%;
+  object-fit: contain;
+}
+
+tbody tr td p span {
+  display: block;
+  font-weight: 700;
+
+  @media (min-width: 768px) {
+    display: none;
+  }
+}
+
+@media (min-width: 992px) {
+
+  th,
+  td {
+    padding: 15px;
+  }
+}
+
+.container-table {
+  background-color: white;
+
+  @media (min-width: 768px) {
+    padding: 20px;
+  }
+}
+
+.container-button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+
+  @media (min-width: 768px) {
+    margin-top: 20px;
+  }
+}
+
+.center-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-button .center-button button {
+  margin: 0 10px;
+  background-color: white;
+  color: #0c235a;
+  border: none;
+  font-size: 18px;
+}
+
+.menu-container {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+
+.menu-button {
+  width: 100%;
+  background: #f5df66;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+  font-weight: 700;
+  text-align: center;
+  padding: 10px 0px;
+
+  @media (min-width: 768px) {
+    width: auto;
+    background: none;
+  }
+}
+
+.menu-text {
+  @media (min-width: 768px) {
+    display: none;
+  }
+}
+
+
+
+.menu-button .menu-icon {
+  display: none;
+
+  @media (min-width: 768px) {
+    display: block;
+    font-size: 20px;
+  }
+}
+
+.menu-dropdown {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background: white;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 9999;
+  min-width: 100px;
+  padding: 10px 0;
+  border-radius: 4px;
+}
+
+.menu-item {
+  padding: 10px 20px;
+  cursor: pointer;
+  background: none;
+  border: none;
+  width: 100%;
+  text-align: left;
+}
+
+.menu-item:hover {
+  background: #f1f1f1;
+}

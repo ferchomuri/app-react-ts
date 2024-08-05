@@ -1,0 +1,19 @@
+.select__input {
+  height: 35px;
+  background-color: white;
+  color: #0c235a;
+  padding: 0 12px;
+  width: 90px;
+  border: none;
+  font-size: 14px;
+  -webkit-appearance: button;
+  appearance: button;
+  outline: none;
+  cursor: pointer;
+  border: 1px solid #0c235a;
+}
+
+.select:hover {
+  color: rgba(255, 255, 255, 0.6);
+  background-color: rgba(255, 255, 255, 0.2);
+}

@@ -1,9 +1,24 @@
-import React from 'react';
-import { render, screen } from '@testing-library/react';
-import App from './App';
+import { render, screen } from "@testing-library/react";
+import { MemoryRouter } from "react-router-dom";
+import App from "./App";
 
-test('renders learn react link', () => {
-  render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+describe("App Component", () => {
+  const setup = () => {
+    render(
+      <MemoryRouter>
+        <App />
+      </MemoryRouter>
+    );
+  };
+
+  it("renders Navbar correctly", () => {
+    setup();
+    expect(screen.getByText("BANCO")).toBeInTheDocument();
+  });
+
+  it("renders Product correctly", async () => {
+    setup();
+    await new Promise((resolve) => setTimeout(resolve, 3000));
+    expect(screen.getByTestId("product_test")).toBeInTheDocument();
+  });
 });
